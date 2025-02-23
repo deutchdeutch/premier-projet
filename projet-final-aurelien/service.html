@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deutch-Service</title>
+    <link rel="stylesheet" href="accueil.css" />
+    <link rel="shortcut icon" href="bon.logo.png" />
+    <meta
+      name="Deutch food et service"
+      content="vous proposons des produits agro-alimentaires, les tissus afriacins tels que le Ndop, les objets d'art et décoratifs tels que des vases,des assiètes en bois"
+    />
+  </head>
+  <nav id="navbar">
+    <img src="bon.logo.png" class="logo" />
+
+    <div id="nav-link">
+      <a href="accueil.html" class="link">Accueil</a>
+      <a href="produits.html" class="link">Produits</a>
+      <a href="service.html" class="link">Services</a>
+      <a href="contact.html" class="link">Contact</a>
+    </div>
+  </nav>
+  <body>
+    <h1 class="texte1">Nos grilles de prix</h1>
+    <p class="paragraphe2">
+      Vous retrouverez ici les grilles de prix par variétes de produits:
+    </p>
+    <br />
+    <div id="grand-tableau">
+      <div id="tableau1">
+        <table
+          border="1"
+          style="float: left; margin-right: 10px; margin-bottom: 6px"
+          id="table1"
+        >
+          <thead>
+            <tr>
+              <td>Produits secs/frais</td>
+              <td>Prix en Kg</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Poivre Noir</td>
+              <td>2€</td>
+            </tr>
+            <tr>
+              <td>Piment rouge</td>
+              <td>2,50€</td>
+            </tr>
+            <tr>
+              <td>Patate douce</td>
+              <td>3€</td>
+            </tr>
+            <tr>
+              <td>Manioc</td>
+              <td>4,99€</td>
+            </tr>
+            <tr>
+              <td>Poisson fumé</td>
+              <td>5€</td>
+            </tr>
+            <tr>
+              <td>bobolo</td>
+              <td>2,5€</td>
+            </tr>
+            <tr>
+              <td>Gombos</td>
+              <td>2,5€</td>
+            </tr>
+            <tr>
+              <td>Haricot rouge</td>
+              <td>3€</td>
+            </tr>
+            <tr>
+              <td>Igname</td>
+              <td>2,99€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <div id="tableau2">
+        <table
+          border="1"
+          style="float: left; margin-right: 10px; margin-bottom: 6px"
+          id="table2"
+        >
+          <thead>
+            <tr>
+              <td>Autres produits</td>
+              <td>Prix</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Huile de Palme</td>
+              <td>2,99€/litre</td>
+            </tr>
+            <tr>
+              <td>Assiete et bols en bois décoratifs</td>
+              <td>50€ lots de 5 Assietes et bols</td>
+            </tr>
+            <tr>
+              <td>Potterie</td>
+              <td>30€ lots de 5</td>
+            </tr>
+            <tr>
+              <td>tissu traditionnel</td>
+              <td>60€ l'unité</td>
+            </tr>
+            <tr>
+              <td>Le Ndop</td>
+              <td>80€ l'unité</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h2 id="texte3">formulaire de paiement</h2>
+    <div id="Paniers">
+      <h3>Panier</h3>
+      <ul>
+        <li>
+          produits-secs/frais
+          <label>quantité /kg</label><input type="checkbox" /> <br />
+          <input type="number" />
+          <select>
+            <option>votre choix</option>
+            <option>poivre noir</option>
+            <option>piment rouge</option>
+            <option>patate douce</option>
+            <option>manioc</option>
+            <option>poisson fumé</option>
+            <option>bobolo</option>
+            <option>gombos</option>
+            <option>haricots rouge</option>
+            <option>igname</option>
+          </select>
+        </li>
+        <li><input type="number" placeholder="Euro" />Montant</li>
+
+        <li>
+          autres-produits <input type="checkbox" /> <label>litre</label>
+          <input type="checkbox" /> <label>Lot</label><input type="checkbox" />
+          <label>Unité</label>
+          <br />
+          <label>Quantité</label> <input type="number" />
+          <select>
+            <option>votre choix</option>
+            <option>Huile rouge</option>
+            <option>Assiètes/bols décoratifs</option>
+            <option>Potteries</option>
+            <option>tissus traditionnel</option>
+            <option>Le ndop</option>
+          </select>
+        </li>
+        <li><input type="number" placeholder="Euro" />Montant</li>
+
+        <li><input type="number" placeholder="Euro" />Montant total</li>
+      </ul>
+    </div>
+    <div id="formulaire-container">
+      <form id="form1">
+        <fieldset>
+          <legend>Informations personnelles</legend>
+          <label for="">Nom:</label>
+          <input type="text" placeholder="votre nom" required /> <br />
+          <label>Prénom:</label>
+          <input type="text" placeholder="votre prénom" required /> <br />
+          <label for="">Email:</label>
+          <input type="email" placeholder="toto@gmail.com" required /> <br />
+          <label for="">Téléphone:</label>
+          <input type="number" />
+        </fieldset>
+        <fieldset>
+          <legend>adresse de facturation</legend>
+          <label for="">Adresse:</label>
+          <input type="text" /> <br />
+          <label for="">Ville:</label>
+          <input type="text" /> <br />
+          <label for="">Code postale</label>
+          <input type="number" />
+          <label>Pays</label>
+          <select>
+            <option>france</option>
+            <option>Belgique</option>
+            <option>Italie</option>
+            <option>Allemagne</option>
+            <option>Espagne</option>
+            <option>Luxembourg</option>
+            <option>Suisse</option>
+            <option>Pays-Bas></option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Details de paiement</legend>
+          <label>Type de paiement:</label> <br />
+          <input type="radio" />
+          <label>Carte bancaire</label>
+          <input type="radio" />
+          <label>PayPal</label> <br />
+          <label for="">Numero de carte</label>
+          <input type="number" /> <br />
+          <label for="">Date d'expiration</label>
+          <input type="month" /> <br />
+          <label>CVV</label>
+          <input type="number" />
+        </fieldset>
+        <fieldset>
+          <legend>Condition générale</legend>
+          <label for="">J'accepte les conditions générales de vente</label>
+          <input type="checkbox" />
+        </fieldset>
+        <a href="#form1" class="payer">Payer</a>
+      </form>
+      <p id="message2">Merci d'avoir Payer</p>
+    </div>
+    <footer>
+      <p class="p1">copyrigth Deutch-Service © 2025</p>
+
+      Email: deutch-service@gmail.fr <br />
+      <label>Inscription à la newsletter</label>
+      <input type="email" placeholder="votre e-mail" />
+      <button>Envoyer</button>
+      <a href="https://www.facebook.com/?locale=fr_FR" class="A1"> facebook</a>
+      <a
+        href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13560899667&extra_1=s%7Cc%7C547348932178%7Ce%7Cinstagram%20%27%7C&placement=&creative=547348932178&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13560899667%26adgroupid%3D126262412054%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D9055720%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=CjwKCAiAnpy9BhAkEiwA-P8N4o4wA3_oG41GE-N9rya9FeHwHdLYi9eboOwEj8wSdWVF8fZ6Qwu0ZxoCQKoQAvD_BwE"
+        class="A1"
+        >Instagram</a
+      >
+      <a href="https://x.com/?lang=fr" class="A1">Twitter (X)</a>
+    </footer>
+  </body>
+</html>

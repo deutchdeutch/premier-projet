@@ -1,0 +1,579 @@
+@font-face {
+  font-family: "The Hoca Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("The Hoca Bold"), url("TheHocaBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Chill Script Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Chill Script Regular"), url("ChillScript.woff") format("woff");
+}
+
+* {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+body {
+  background-image: url(https://img.freepik.com/photos-gratuite/vue-dessus-the-au-citron-citron-vert-tranches-pomme-rouge-cannelle-pomme-pin-paille_141793-7019.jpg?ga=GA1.1.370263955.1739049679&semt=ais_incoming);
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.logo {
+  width: 80px;
+  height: 70px;
+  transition-property: all;
+  transition-delay: 0s;
+  opacity: 1;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+.logo:hover {
+  animation: none;
+}
+
+a {
+  text-decoration: none;
+  margin: 20px;
+  color: black;
+  font-size: 20px;
+  font-family: "The Hoca Bold";
+}
+#navbar {
+  background-color: #bbccb4;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "The Hoca Bold";
+}
+.texte {
+  color: white;
+  font-family: "The Hoca Bold";
+}
+p {
+  color: white;
+}
+
+.span1 {
+  color: green;
+}
+.span2 {
+  color: yellow;
+}
+.span3 {
+  color: red;
+}
+img {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  box-shadow: -10px 20px;
+  box-shadow: #bbccb4;
+  padding: 10px;
+}
+img:hover {
+  box-shadow: none;
+  transform: rotate(45deg);
+}
+.bienvenue {
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+#formulaire-container {
+  padding-bottom: 70px;
+}
+footer {
+  background-color: #bfb084;
+  bottom: 0px;
+  position: fixed;
+  width: 100vw;
+  padding-bottom: 10px;
+  padding: 10px;
+  font-size: 25px;
+  font-family: "Chill Script Regular";
+  height: 100px;
+}
+.A1 {
+  color: blue;
+}
+.p1 {
+  text-align: end;
+  bottom: auto;
+  text-align: center;
+}
+#row {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+}
+#row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+#row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+}
+button {
+  background-color: green;
+}
+button:hover {
+  background-color: beige;
+}
+.texte1 {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+.p2 {
+  color: white;
+}
+
+.produit1-2 {
+  border: solid 5px black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+}
+.img1 {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.link1 {
+  color: #bbccb4;
+}
+.button1 {
+  border-radius: 10px;
+  background-color: green;
+  position: absolute;
+  bottom: -100px;
+  right: -10px;
+}
+section {
+  margin-bottom: 200px;
+}
+
+.grand-cadre {
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 100vw;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.figure {
+  position: absolute;
+  height: 150px;
+  width: 10%;
+  right: 110%;
+  animation: banner-auto-slider 10s linear infinite;
+}
+
+#figure-1 {
+  animation-delay: calc(5s / 5 * (8 - 1) * -1);
+}
+
+#figure-2 {
+  animation-delay: calc(5s / 5 * (8 - 2) * -1);
+}
+
+#figure-3 {
+  animation-delay: calc(5s / 5 * (8 - 3) * -1);
+}
+
+#figure-4 {
+  animation-delay: calc(5s / 5 * (8 - 4) * -1);
+}
+
+#figure-5 {
+  animation-delay: calc(5s / 5 * (8 - 5) * -1);
+}
+
+#figure-6 {
+  animation-delay: calc(5s / 5 * (8 - 6) * -1);
+}
+
+#figure-7 {
+  animation-delay: calc(5s / 5 * (8 - 7) * -1);
+}
+
+#figure-8 {
+  animation-delay: calc(5s / 5 * (8 - 8) * -1);
+}
+
+@keyframes banner-auto-slider {
+  from {
+    right: -10%;
+  }
+}
+
+.titre-image {
+  color: white;
+  text-align: center;
+  display: none;
+}
+.titre-image1 {
+  color: white;
+  text-align: center;
+  display: none;
+}
+
+.grand-cadre1 {
+  position: relative;
+  display: flex;
+  height: 300px;
+  width: 100vw;
+  overflow: hidden;
+  margin: 10px auto;
+}
+
+.autre-figure {
+  position: absolute;
+  height: 150px;
+  width: 10%;
+  right: 110%;
+  animation: banner-auto-slider 10s linear infinite;
+  margin: 50px;
+}
+#autre-figure1 {
+  animation-delay: calc(5s / 5 * (5 - 1) * -1);
+}
+
+#autre-figure2 {
+  animation-delay: calc(5s / 5 * (5 - 2) * -1);
+}
+
+#autre-figure3 {
+  animation-delay: calc(5s / 5 * (5 - 3) * -1);
+}
+
+#autre-figure4 {
+  animation-delay: calc(5s / 5 * (5 - 4) * -1);
+}
+#autre-figure5 {
+  animation-delay: calc(5s / 5 * (5 - 5) * -1);
+}
+
+@keyframes banner-auto-slider {
+  from {
+    right: -10%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  @font-face {
+    font-family: "The Hoca Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("The Hoca Bold"), url("TheHocaBold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Chill Script Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Chill Script Regular"), url("ChillScript.woff") format("woff");
+  }
+
+  * {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+  }
+  body {
+    background-image: url(https://img.freepik.com/photos-gratuite/vue-dessus-the-au-citron-citron-vert-tranches-pomme-rouge-cannelle-pomme-pin-paille_141793-7019.jpg?ga=GA1.1.370263955.1739049679&semt=ais_incoming);
+  }
+  a:hover {
+    color: #2c2627;
+    text-decoration: underline;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    transition-property: all;
+    transition-delay: 0s;
+    opacity: 1;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+  .logo:hover {
+    animation: none;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-size: 20px;
+    font-family: "The Hoca Bold";
+  }
+  #navbar {
+    background-color: #bbccb4;
+  }
+  #nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "The Hoca Bold";
+  }
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "The Hoca Bold";
+    display: none;
+  }
+  .texte {
+    color: white;
+    font-family: "The Hoca Bold";
+  }
+  p {
+    color: white;
+  }
+
+  .span1 {
+    color: green;
+  }
+  .span2 {
+    color: yellow;
+  }
+  .span3 {
+    color: red;
+  }
+  img {
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+    box-shadow: -10px 20px;
+    box-shadow: #bbccb4;
+    padding: 10px;
+  }
+  img:hover {
+    box-shadow: none;
+    transform: rotate(45deg);
+  }
+  .bienvenue {
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+  }
+  #formulaire-container {
+    padding-bottom: 70px;
+  }
+  footer {
+    background-color: #bfb084;
+    bottom: 0px;
+    position: fixed;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: "Chill Script Regular";
+    height: 100px;
+  }
+  .A1 {
+    color: blue;
+  }
+  .p1 {
+    text-align: end;
+    bottom: auto;
+  }
+  #row {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: end;
+  }
+  #row1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+  #row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+  }
+  button {
+    background-color: green;
+  }
+  button:hover {
+    background-color: beige;
+  }
+  .texte1 {
+    color: #2c2627;
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .p2 {
+    color: #2c2627;
+  }
+
+  .produit1-2 {
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+  }
+  .img1 {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .link1 {
+    color: #bbccb4;
+  }
+  .button1 {
+    border-radius: 10px;
+    background-color: green;
+    position: absolute;
+    bottom: -100px;
+    right: -10px;
+  }
+
+  section {
+    margin-bottom: 200px;
+  }
+
+  .grand-cadre {
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    margin: 10px auto;
+    padding-bottom: 40px;
+  }
+
+  .figure {
+    position: absolute;
+    height: 150px;
+    width: 10%;
+    right: 110%;
+    animation: banner-auto-slider 10s linear infinite;
+  }
+
+  #figure-1 {
+    animation-delay: calc(5s / 5 * (8 - 1) * -1);
+  }
+
+  #figure-2 {
+    animation-delay: calc(5s / 5 * (8 - 2) * -1);
+  }
+
+  #figure-3 {
+    animation-delay: calc(5s / 5 * (8 - 3) * -1);
+  }
+
+  #figure-4 {
+    animation-delay: calc(5s / 5 * (8 - 4) * -1);
+  }
+
+  #figure-5 {
+    animation-delay: calc(5s / 5 * (8 - 5) * -1);
+  }
+
+  #figure-6 {
+    animation-delay: calc(5s / 5 * (8 - 6) * -1);
+  }
+
+  #figure-7 {
+    animation-delay: calc(5s / 5 * (8 - 7) * -1);
+  }
+
+  #figure-8 {
+    animation-delay: calc(5s / 5 * (8 - 8) * -1);
+  }
+
+  @keyframes banner-auto-slider {
+    from {
+      right: -10%;
+    }
+  }
+
+  .titre-image {
+    color: white;
+    text-align: center;
+    display: block;
+  }
+  .titre-image1 {
+    color: white;
+    text-align: center;
+    display: block;
+  }
+
+  .grand-cadre1 {
+    position: relative;
+    display: flex;
+
+    height: 300px;
+    width: 100vw;
+    overflow: hidden;
+    margin: 10px auto;
+  }
+  section {
+    margin-bottom: 100px;
+  }
+
+  .autre-figure {
+    position: absolute;
+    height: 150px;
+    width: 10%;
+    right: 110%;
+    animation: banner-auto-slider 10s linear infinite;
+    margin: 50px;
+  }
+  #autre-figure1 {
+    animation-delay: calc(5s / 5 * (5 - 1) * -1);
+  }
+
+  #autre-figure2 {
+    animation-delay: calc(5s / 5 * (5 - 2) * -1);
+  }
+
+  #autre-figure3 {
+    animation-delay: calc(5s / 5 * (5 - 3) * -1);
+  }
+
+  #autre-figure4 {
+    animation-delay: calc(5s / 5 * (5 - 4) * -1);
+  }
+  #autre-figure5 {
+    animation-delay: calc(5s / 5 * (5 - 5) * -1);
+  }
+
+  @keyframes banner-auto-slider {
+    from {
+      right: -10%;
+    }
+  }
+}
